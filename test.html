@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .Carrousel{
+            margin: 100px auto;
+            width: 980px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/3dCarrousel.css"/>
+    <script src="js/jquery-1.7.js"></script>
+</head>
+<body>
+<div class='Carrousel'></div>
+<script src='js/3dCarrousel.js'></script>
+<script>
+    var data = {
+        sliceNum: 10,
+        height: 300,
+        width: 450,
+        pics: ['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg'],
+        ifTurnDown:true
+    };
+    var c_3d = new Carrousel_3d($('.Carrousel'), data);
+</script>
+</body>
+</html>

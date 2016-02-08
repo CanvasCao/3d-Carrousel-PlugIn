@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*3dÂÖ²¥Í¼*/
+.carrousel-3d-ul {
+    position: relative;
+    margin: 0 auto;
+}
+
+.carrousel-stage {
+    float: left;
+    perspective: 5000px;
+    position: absolute;
+
+}
+
+.carrousel-stage section {
+    transition: all 1s ease 0s;
+    transform-style: preserve-3d;
+}
+
+.carrousel-stage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto;
+}
+.carrousel-btn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
